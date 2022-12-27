@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Commerce Website</title>
+    <script src="https://kit.fontawesome.com/b437160ac4.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="style.css"> 
+    <link rel="shortcut icon" href="./hoodies 6.jpeg" type="image/x-icon">
+    
+
+</head>
+<body>
+    <header id="header">
+        <div id="first-header">
+            <div id="shirt-name">
+                <h3 id="brand">Louis Vuitton</h3>
+                <p>Different Brands are Available at Affordable Prices</p>
+            </div>
+            <div id="countDown-container">
+                <p>Limited 
+                    Time Offer
+                </p>
+                <div id="timer">
+                    <span id="days-box" class="timer-box">00 Days</span>
+                    <span id="hours-box" class="timer-box">00 Hours</span>
+                    <span id="min-box" class="timer-box">00 Mins</span>
+                    <span id="sec-box" class="timer-box">00 Sec</span>
+                </div>
+            </div>
+            <div id="discount-container">
+                <h4 id="discount"><i class="fa fa-bell"></i> Sales 10% Off</h4>
+                <del>$100.00</del>
+                <span>Now $90.00</span>
+            </div>
+            <div id="shop-btn">
+                <button>Shop Now</button>
+            </div>
+        </div>
+        <div id="second-header">
+            <div id="categories">
+                <nav>
+                    <ul>
+                        <li>
+                            <a href="#shirts">T-shirts</a>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <a href="#hoodies">Hoodies</a>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <a href="#underwear">UnderWears</a>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <a href="#trousers">Trousers</a>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <a href="#jeans">Jeans</a>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <a href="#skirts">Skirts</a>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <a href="#suits">Suits</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        <div id="third-header">
+            <div id="brand-name">
+                <h1>Lynn's Collection</h1>
+                <p>Your Home of Affordable Clothing & Accessories</p>
+            </div>
+            <div id="searchbar">
+                <form action="" method="get">
+                    <input type="text" placeholder="Search products and brands">
+                <button id="search-btn" type="submit">Search</button>
+                </form>
+            </div>
+            <div class="cart-menu">
+                <a  href="./cart.html" class="btn notification"><i class="fa fa-cart-arrow-down "></i> Cart
+                </a>
+            </div>
+        </div>
+    </header>
+    <main id="items-container">
+        <h3>Top Features Of the week</h3>
+        <div id="top-features">
+            <div id="sidebar">
+                <nav>
+                    <ul>
+                        <li>
+                            <a href="index.html"><i class="fa fa-solid fa-shirt"></i>Clothing</a>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <a href=""><i class=" fa fa-shoe-prints"></i> Sneakers</a>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <a href=""><i class=" fa fa-solid fa-bag-shopping"></i> Bags</a>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <a href=""><i class=" fa fa-solid fa-ring"></i> Jewelries</a>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <a href=""><i class=" fa fa-solid fa-spray-can-sparkles"></i> Perfume</a>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <a href=""><i class=" fa-solid fa-stopwatch "></i> Watches</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="sliding-images" id="sliding-images">
+                <div class="mySlides fade">
+                    <div class="numbertext">
+                        1 / 3
+                    </div>
+                    <img src="./boxer1.jpeg" alt="" style="width: 100%">
+                    <div class="text">Caption Text</div>
+                </div>
+                <div class="mySlides fade">
+                    <div class="numbertext">
+                        2 / 3
+                    </div>
+                    <img src="./Boxer2.jpg" alt="" style="width: 100%">
+                    <div class="text">Caption Text</div>
+                </div>
+                <div class="mySlides fade">
+                    <div class="numbertext">
+                        3 / 3
+                    </div>
+                    <img src="./boxer1.jpeg" alt="" style="width: 100%">
+                    <div class="text">Caption Text</div>
+                </div>
+                <a href="" class="prev" onclick="plusSlides(-1)"> &lt;</a>
+                <a class="next" onclick="plusSlides(1)"> &gt;</a>
+            </div>
+            <br>
+            <div style="text-align:center">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+            </div>
+        </div>
+        <section id="shirts">
+            <h3>T-Shirts</h3>
+            <div class="items-container">
+                <div class="items">
+                    <img src="./247.jpg" alt="" class="item-image">
+                    <span class="product-name">Dyed Shirt</span>
+                    <div class="info">
+                        <button class="cart"><i class="fa fa-solid fa-cart-shopping"></i> Add To cart</button>
+                        <span class="price">$25.00</span>
+                    </div>
+                </div>
+                <div class="items">
+                    <img src="./download 1).jpeg" alt="" class="item-image">
+                    <span class="product-name">Checked T-Shirt (Blue-Black)</span>
+                    <div class="info">
+                        <button class="cart"><i class="fa fa-solid fa-cart-shopping"></i> Add To cart</button>
+                        <span class="price">$40.00</span>
+                    </div>
+                </div>
+                <div class="items">
+                    <img src="./images.jpeg" alt="" class="item-image">
+                    <span class="product-name">Brandless Top (Blue)</span>
+                    <div class="info">
+                        <button class="cart"><i class="fa fa-solid fa-cart-shopping"></i> Add To cart</button>
+                        <span class="price">$16.00</span>
+                    </div>
+                </div>
+                <div class="items">
+                    <img src="./download.jpeg" alt="" class="item-image">
+                    <span class="product-name">Checked T-Shirt (Red & Black)</span>
+                    <div class="info">
+                        <button class="cart"><i class="fa fa-solid fa-cart-shopping"></i> Add To cart</button>
+                        <span class="price">$45.00</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="trousers">
+            <h3>Trousers</h3>
+            <div class="items-container">
+                <div class="items">
+                    <img src="./30-jg-b2-army-q-rious-original-imafw7g9kgtxzft4-bb.jpeg" alt="" class="item-image">
+                    <span class="product-name">Khaki Trouser (Ladies)</span>
+                    <div class="info">
+                        <button class="cart"><i class="fa fa-solid fa-cart-shopping"></i>  Add To cart</button>
+                        <span class="price">$55.00</span>
+                    </div>
+                </div>
+                <div class="items">
+                    <img src="./trouser4.jpeg" alt="" class="item-image">
+                    <span class="product-name">Black Trouser (Ladies)</span>
+                    <div class="info">
+                        <button class="cart"><i class="fa fa-solid fa-cart-shopping"></i>  Add To cart</button>
+                        <span class="price">$35.00</span>
+                    </div>
+                </div>
+                <div class="items">
+                    <img src="./trouser1.jpeg" alt="" class="item-image">
+                    <span class="product-name">Black Trouser (Men)</span>
+                    <div class="info">
+                        <button class="cart"><i class="fa fa-solid fa-cart-shopping"></i>  Add To cart</button>
+                        <span class="price">$60.00</span>
+                    </div>
+                </div>
+                <div class="items">
+                    <img src="./trouser2.jpeg" alt="" class="item-image">
+                    <span class="product-name">Brown trouser (Men))</span>
+                    <div class="info">
+                        <button class="cart"><i class="fa fa-solid fa-cart-shopping"></i>  Add To cart</button>
+                        <span class="price">$45.00</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="suits">
+            <h3>Suits</h3>
+            <div class="items-container">
+                <div class="items">
+                    <img src="./suit4.jpeg" alt="" class="item-image">
+                    <span class="product-name">Purple Suit</span>
+                    <div class="info">
+                        <button class="cart"><i class="fa fa-solid fa-cart-shopping"></i>  Add To cart</button>
+                        <span class="price">$405.00</span>
+                    </div>
+                </div>
+                <div class="items">
+                    <img src="./suit2.jpeg" alt="" class="item-image">
+                    <span class="product-name">Dark Green Suit</span>
+                    <div class="info">
+                        <button class="cart"><i class="fa fa-solid fa-cart-shopping"></i>  Add To cart</button>
+                        <span class="price">$235.00</span>
+                    </div>
+                </div>
+                <div class="items">
+                    <img src="./suit3.jpeg" alt="" class="item-image">
+                    <span class="product-name">Dark Blue Suit</span>
+                    <div class="info">
+                        <button class="cart"><i class="fa fa-solid fa-cart-shopping"></i>  Add To cart</button>
+                        <span class="price">$360.00</span>
+                    </div>
+                </div>
+                <div class="items">
+                    <img src="./MRW-1-PURPLE_600x.jpg" alt="" class="item-image">
+                    <span class="product-name">Violet Suit</span>
+                    <div class="info">
+                        <button class="cart"><i class="fa fa-solid fa-cart-shopping"></i>  Add To cart</button>
+                        <span class="price">$345.00</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="jeans">
+            <h3>Denim Jeans</h3>
+            <div class="items-container">
+                <div class="items">
+                    <img src="./jeans 1.jpeg " alt="" class="item-image">
+                    <span class="product-name">Blue Jeans</span>
+                    <div class="info">
+                        <button class="cart"><i class="fa fa-solid fa-cart-shopping"></i>  Add To cart</button>
+                        <span class="price">$45.00</span>
+                    </div>
+                </div>
+                <div class="items">
+                    <img src="./jeans 3.jpeg" alt="" class="item-image">
+                    <span class="product-name">High Waisted Jeans</span>
+                    <div class="info">
+                        <button class="cart"><i class="fa fa-solid fa-cart-shopping"></i>  Add To cart</button>
+                        <span class="price">$35.00</span>
+                    </div>
+                </div>
+                <div class="items">
+                    <img src="./jeans 5.jpeg" alt="" class="item-image">
+                    <span class="product-name">Baggy Jeans</span>
+                    <div class="info">
+                        <button class="cart"><i class="fa fa-solid fa-cart-shopping"></i>  Add To cart</button>
+                        <span class="price">$35.00</span>
+                    </div>
+                </div>
+                <div class="items">
+                    <img src="./jeans 1.jpeg" alt="" class="item-image">
+                    <span class="product-name">Skinny Jeans</span>
+                    <div class="info">
+                        <button class="cart"><i class="fa fa-solid fa-cart-shopping"></i>  Add To cart</button>
+                        <span class="price">$45.00</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="skirts">
+            <h3>Skirts</h3>
+            <div class="items-container">
+                <div class="items">
+                    <img src="./skirt 1.jpeg" alt="" class="item-image">
+                    <span class="product-name">Long Skirt</span>
+                    <div class="info">
+                        <button class="cart"><i class="fa fa-solid fa-cart-shopping"></i>  Add To cart</button>
+                        <span class="price">$55.00</span>
+                    </div>
+                </div>
+                <div class="items">
+                    <img src="./n skirt 2.jpeg" alt="" class="item-image">
+                    <span class="product-name">Short Skirt (Red & White)</span>
+                    <div class="info">
+                        <button class="cart"><i class="fa fa-solid fa-cart-shopping"></i>  Add To cart</button>
+                        <span class="price">$45.00</span>
+                    </div>
+                </div>
+                <div class="items">
+                    <img src="./n skirt 1.jpeg" alt="" class="item-image">
+                    <span class="product-name">Short Skirt</span>
+                    <div class="info">
+                        <button class="cart"><i class="fa fa-solid fa-cart-shopping"></i>  Add To cart</button>
+                        <span class="price">$35.00</span>
+                    </div>
+                </div>
+                <div class="items">
+                    <img src="./n skirt 5.jpeg" alt="" class="item-image">
+                    <span class="product-name">Long Skirt</span>
+                    <div class="info">
+                        <button class="cart"><i class="fa fa-solid fa-cart-shopping"></i>  Add To cart</button>
+                        <span class="price">$15.00</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="hoodies">
+            <h3>Hoodies</h3>
+            <div class="items-container">
+                <div class="items">
+                    <img src="./hoodies 2.jpeg" alt="" class="item-image">
+                    <span class="product-name">Brandless Hoodies (Yellow)</span>
+                    <div class="info">
+                        <button class="cart"><i class="fa fa-solid fa-cart-shopping"></i>  Add To cart</button>
+                        <span class="price">$155.00</span>
+                    </div>
+                </div>
+                <div class="items">
+                    <img src="./hoodies 3.jpeg" alt="" class="item-image">
+                    <span class="product-name">White Hoodies</span>
+                    <div class="info">
+                        <button class="cart"><i class="fa fa-solid fa-cart-shopping"></i>  Add To cart</button>
+                        <span class="price">$95.00</span>
+                    </div>
+                </div>
+                <div class="items">
+                    <img src="./hoodies 4.jpeg" alt="" class="item-image">
+                    <span class="product-name">Brandless Hoodies</span>
+                    <div class="info">
+                        <button class="cart"><i class="fa fa-solid fa-cart-shopping"></i>  Add To cart</button>
+                        <span class="price">$55.00</span>
+                    </div>
+                </div>
+                <div class="items">
+                    <img src="./hoodies 6.jpeg" alt="" class="item-image">
+                    <span class="product-name">Multi-Colored Hoodies</span>
+                    <div class="info">
+                        <button class="cart"><i class="fa fa-solid fa-cart-shopping"></i>  Add To cart</button>
+                        <span class="price">$75.00</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="underwears">
+            <h3>UnderWears</h3>
+            <div class="items-container">
+                <div class="items">
+                    <img src="./pan1.jpeg" alt="" class="item-image">
+                    <span class="product-name">Lace Panties</span>
+                    <div class="info">
+                        <button class="cart"><i class="fa fa-solid fa-cart-shopping"></i>  Add To cart</button>
+                        <span class="price">$15.00</span>
+                    </div>
+                </div>
+                <div class="items">
+                    <img src="./bra 2.jpeg" alt="" class="item-image">
+                    <span class="product-name">White Brassiere</span>
+                    <div class="info">
+                        <button class="cart"><i class="fa fa-solid fa-cart-shopping"></i>  Add To cart</button>
+                        <span class="price">$25.00</span>
+                    </div>
+                </div>
+                <div class="items">
+                    <img src="./boxer1.jpeg" alt="" class="item-image">
+                    <span class="product-name">BBoxer Shorts</span>
+                    <div class="info">
+                        <button class="cart"><i class="fa fa-solid fa-cart-shopping"></i>  Add To cart</button>
+                        <span class="price">$10.00</span>
+                    </div>
+                </div>
+                <div class="items">
+                    <img src="./Bra1.jpeg" alt="" class="item-image">
+                    <span class="product-name">Red Bra</span>
+                    <div class="info">
+                        <button class="cart"><i class="fa fa-solid fa-cart-shopping"></i>  Add To cart</button>
+                        <span class="price">$75.00</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+        <a href="#" class="float"> 
+            <i class="fa  fa-caret-up my-float">
+            </i> 
+        </a>
+    <footer id="footer-container">
+        <section id="footer1">
+            <div class="brand-name">
+                <h1>Lynn's Collections</h1>
+                <p>Your Home of Affordable Clothing & Accessories</p>
+            </div>
+            <div id="subscription">
+                <h5>News About Lynn's Collection?</h5>
+                <p>Subscribe to our newsletter on our latest offers!</p>
+                <form action="" method="post">
+                    <input type="text" placeholder="Enter Your Email Account">
+                    <button type="submit">Subscribe</button>
+                </form>
+            </div>
+            <div id="contacts">
+                <h5>Join us On</h5>
+                <div id="links">
+                    <a href=" target="_blank" rel="noopener noreferrer">Facebook <i class="fa fa-facebook"></i></a>
+                    <br>
+                    <a href="http://" target="_blank" rel="noopener noreferrer">Instagram <i class="fa fa-instagram"></i></a>
+                    <br>
+                    <a href="http://" target="_blank" rel="noopener noreferrer">Twitter <i class="fa fa-twitter"></i></a>
+                    <br>
+                    <a href="http://" target="_blank" rel="noopener noreferrer">Youtube <i class="fa fa-youtube"></i></a>
+                </div>
+            </div>
+        </section>
+        <section id="footer2">
+            <div id="help">
+                <h5>Lets help you</h5>
+                <ol>
+                    <li>
+                        <a href="#">Help center</a>
+                    </li>
+                    <li>
+                        <a href="#">How to buy </a>
+                    </li>
+                    <li>
+                        <a href="#">Delivery Timelines</a>
+                    </li>
+                    <li>
+                        <a href="#">Return Policy</a>
+                    </li>
+                    <li>
+                        <a href="#">Report a Product</a>
+                    </li>
+                </ol>
+            </div>
+            < >
+            <div id="about">
+                <h5>about Lynn's collections</h5>
+                <ol>
+                    <li>
+                        <a href="#">About Us</a>
+                    </li>
+                    <li>
+                        <a href="#">Terms and Conditions</a>
+                    </li>
+                    <li>
+                        <a href="#">Privacy and Cookie Notice</a>
+                    </li>
+                    <li>
+                        <a href="#">Flash Sales</a>
+                    </li>
+                </ol>
+            </div>
+            <hr>
+            <div id="payment">
+                <h5>payment methods</h5>
+                <a href="">Cash on Delivery <i class="fa fa-money"></i></a>
+                <br>
+                <a href="">Mobile Money <i class="fa fa-mobile"></i></a>
+                <br>
+                <a href="">Paypal <i class="fa fa-paypal"></i></a>
+                <br>
+                <a href="">Visa <i class="fa fa-cc-visa"></i></a>
+                <br>
+                <a href="">Mastercard <i class="fa fa-cc-mastercard"></i></a>
+            </div>
+            <hr>
+            <div id="branches">
+                <table>
+                    <h5>Our Branches and Their Location</h5>
+                    <thead>
+                        <th>Branch</th>
+                        <th>Contact</th>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Kumasi</td>
+                            <td>0322043473</td>
+                        </tr>
+                        <tr>
+                            <td>Accra</td>
+                            <td>0327043473</td>
+                        </tr>
+                        <tr>
+                            <td>Tema</td>
+                            <td>0322043473</td>
+                        </tr>
+                        <tr>
+                            <td>Sunyani</td>
+                            <td>0322043473</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+        <div id="dev-section">
+            <span class="dev">&copy; 2022 dev_twumstine. All rights reserved.</span>
+            <span class="dev"> Powered By: DEVTECH IT SOLUTIONS</span>
+        </div>
+    </footer>
+    <script src="app.js"></script>
+</body>
+</html>
