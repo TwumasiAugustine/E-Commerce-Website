@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Commerce Website</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <script src="https://code.jquery.com/jquery-3.6.1.js"
+        integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="Website Icon" href="" type="image">
+</head>
+
+<body>
+    <header id="third-header">
+        <div id="brand-name">
+            <h1>Bryan's Collection</h1>
+            <p>Your Home of Affordable Clothing & Accessories</p>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="product.html">Product</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="blog.html">Blog</a></li>
+            </ul>
+        </nav>
+
+        <div class="cart-menu">
+            <a href="./cart.html" class="btn notification"><i class="fa fa-cart-arrow-down "></i> Cart
+            </a>
+        </div>
+        <div class="mobile-menu" style="display: none">
+            <i class="fas fa-bars" id="menu"></i>
+        </div>
+    </header>
+    <main>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h2 class="text-center p-4">Shopping Cart</h2>
+                    <div class="table-responsive">
+                        <table class="table table-bordered">
+                            <thead>
+                                <tr>
+                                    <th>Product</th>
+                                    <th>Quantity</th>
+                                    <th>Price</th>
+                                    <th>Total</th>
+                                    <th>Remove</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <div class="row">
+                                            <div class="col-md-4">
+                                                <img src="images/1.jpg" alt="product" width="60">
+                                            </div>
+                                            <div class="col-md-8">
+                                                <h5>Product Name</h5>
+                                                <p>Product Code: 12345</p>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td><input type="number" value="1" class="form-control" aria-label="quantity"></td>
+                                    <td>$50.00</td>
+                                    <td>$50.00</td>
+                                    <td><button class="btn btn-danger"><i class="fa fa-trash"></i></button></td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="row">
+                                            <div class="col-md-4">
+                                                <img src="images/2.jpg" alt="product" width="60">
+                                            </div>
+                                            <div class="col-md-8">
+                                                <h5>Product Name</h5>
+                                                <p>Product Code: 12345</p>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td><input type="number" value="1" class="form-control" aria-label="quantity"></td>
+                                    <td>$50.00</td>
+                                    <td>$50.00</td>
+                                    <td><button class="btn btn-danger"><i class="fa fa-trash"></i></button></td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="row">
+                                            <div class="col-md-4">
+                                                <img src="images/3.jpg" alt="product" width="60">
+                                            </div>
+                                            <div class="col-md-8">
+                                                <h5>
+                                                    Product Name
+                                                </h5>
+                                                <p>Product Code: 12345</p>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td><input type="number" value="1" class="form-control" aria-label="quantity"></td>
+                                    <td>$50.00</td>
+                                    <td>$50.00</td>
+                                    <td><button class="btn btn-danger"><i class="fa fa-trash"></i></button></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <div class="float-end">
+                            <button class="btn btn-secondary">Continue Shopping</button>
+                            <button class="btn btn-success">Update Cart</button>
+                            <button class="btn btn-danger">Clear Cart</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container mt-4">
+            <div class="row justify-content-end">
+                <div class="col-md-4">
+                    <div class="card">
+                        <div class="card-header">
+                            <h4>Cart Summary</h4>
+                        </div>
+                        <div class="card-body">
+                            <table class="table">
+                                <tr>
+                                    <td>Subtotal</td>
+                                    <td>$150.00</td>
+                                </tr>
+                                <tr>
+                                    <td>Tax</td>
+                                    <td>$15.00</td>
+                                </tr>
+                                <tr>
+                                    <td>Total</td>
+                                    <td>$165.00</td>
+                                </tr>
+                            </table>
+                        </div>
+                        <div class="card-footer">
+                            <button class="btn btn-success btn-block">Checkout</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row justify-content-center mt-5 mb-5">
+                <div class="col-md-8">
+                    <div class="card">
+                        <div class="card-header">
+                            <h4>Checkout</h4>
+                        </div>
+                        <div class="card-body">
+                            <form action="" method="post">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <label for="name">Name</label>
+                                        <input type="text" name="name" class="form-control" placeholder="Name"
+                                            aria-label="name">
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label for="email">Email</label>
+                                        <input type="email" name="email" class="form-control" placeholder="Email"
+                                            aria-label="email">
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label for="phone">Phone</label>
+                                        <input type="text" name="phone" class="form-control" placeholder="Phone"
+                                            aria-label="phone">
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label for="address">Address</label>
+                                        <input type="text" name="address" class="form-control" placeholder="Address"
+                                            aria-label="address">
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label for="city">City</label>
+                                        <input type="text" name="city" class="form-control" placeholder="City"
+                                            aria-label="city">
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label for="country">Country</label>
+                                        <input type="text" name="country" class="form-control" placeholder="Country"
+                                            aria-label="country">
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label for="zip">Zip</label>
+                                        <input type="text" name="zip" class="form-control" placeholder="Zip"
+                                            aria-label="zip">
+                                    </div>
+                                    <div class="col-md-12">
+                                        <label for="cardname">Name on Card</label>
+                                        <input type="text" name="cardname" class="form-control"
+                                            placeholder="Name on Card" aria-label="cardname">
+                                    </div>
+                                    <div class="col-md-12">
+                                        <label for="cardnumber">Credit Card Number</label>
+                                        <input type="text" name="cardnumber" class="form-control"
+                                            placeholder="Credit Card Number" aria-label="cardnumber">
+                                    </div>
+                                    <div class="col-md-4">
+                                        <label for="expmonth">Exp Month</label>
+                                        <input type="text" name="expmonth" class="form-control" placeholder="Exp Month"
+                                            aria-label="expmonth">
+                                    </div>
+                                    <div class="col-md-4">
+                                        <label for="expyear">Exp Year</label>
+                                        <input type="text" name="expyear" class="form-control" placeholder="Exp Year"
+                                            aria-label="expyear">
+                                    </div>
+                                    <div class="col-md-4">
+                                        <label for="cvv">CVV</label>
+                                        <input type="text" name="cvv" class="form-control" placeholder="CVV"
+                                            aria-label="cvv">
+                                    </div>
+                                </div>
+                                <div class="float-end mt-3">
+                                    <button class="btn btn-success">Place Order</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <a href="#" class="float">
+        <i class="fa  fa-caret-up my-float">
+        </i>
+    </a>
+    <footer id="footer-container">
+        <section id="footer1">
+            <div class="brand-name">
+                <h1>Bryan Collections</h1>
+                <p>Your Home of Affordable Clothing & Accessories</p>
+            </div>
+            <div id="subscription">
+                <h5>New to Bryan Collection?</h5>
+                <p>Subscribe to our newsletter on our latest offers!</p>
+                <form action="" method="post">
+                    <input type="text" placeholder="Enter Your Email Account" aria-label="email">
+                    <button type="submit">Subscribe</button>
+                </form>
+            </div>
+            <div id="contacts">
+                <h5>Join us On</h5>
+                <div id="links">
+                    <span>Facebook</span>
+                    <span>Instagram</span>
+                    <span>Email</span>
+                </div>
+            </div>
+        </section>
+        <section id="footer2">
+            <div id="help">
+                <h5>Lets help you</h5>
+                <ol>
+                    <li>
+                        <a href="#">Help center</a>
+                    </li>
+                    <li>
+                        <a href="#">How to buy </a>
+                    </li>
+                    <li>
+                        <a href="#">Delivery Timelines</a>
+                    </li>
+                    <li>
+                        <a href="#">Return Policy</a>
+                    </li>
+                    <li>
+                        <a href="#">Report a Product</a>
+                    </li>
+                </ol>
+            </div>
+            <div id="about">
+                <h5>about estee collections</h5>
+                <ol>
+                    <li>
+                        <a href="#">About Us</a>
+                    </li>
+                    <li>
+                        <a href="#">Terms and Conditions</a>
+                    </li>
+                    <li>
+                        <a href="#">Privacy and Cookie Notice</a>
+                    </li>
+                    <li>
+                        <a href="#">Flash Sales</a>
+                    </li>
+                </ol>
+            </div>
+            <div id="payment">
+                <h5>payment methods</h5>
+                <a href=""></a>
+            </div>
+            <div id="branches">
+                <table>
+                    <h5>Our Branches and Their Location</h5>
+                    <thead>
+                        <th>Branch</th>
+                        <th>Contact</th>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Kumasi</td>
+                            <td>0322043473</td>
+                        </tr>
+                        <tr>
+                            <td>Accra</td>
+                            <td>0327043473</td>
+                        </tr>
+                        <tr>
+                            <td>Tema</td>
+                            <td>0322043473</td>
+                        </tr>
+                        <tr>
+                            <td>Sunyani</td>
+                            <td>0322043473</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+        <div id="dev-section">
+            <span class="dev">&copy;2022 dev_twumstine</span>
+            <span class="dev"> Powered By: DEVTECH IT SOLUTIONS</span>
+        </div>
+    </footer>
+    <script src="app.js"></script>
+</body>
+
+</html>

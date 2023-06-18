@@ -1,0 +1,14 @@
+#about, #mission,#team{
+  margin: 2rem 20px 20px 20px;
+}
+section h1, h2{
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+section p{
+  font-size: 1.2rem;
+  line-height: 1.5;
+}
+#team h2{
+  text-align: center;
+}
